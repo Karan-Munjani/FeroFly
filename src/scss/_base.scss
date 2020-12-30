@@ -1,0 +1,17 @@
+$primary: #242323;
+$secondary: #c7c7c7;
+$font-family-sans-serif: "Raleway";
+$body-bg: #ffffff;
+
+// Required
+@import "../../bootstrap/scss/functions";
+@import "../../bootstrap/scss/variables";
+@import "../../bootstrap/scss/mixins";
+$spacers: (
+  6: $spacer * 6,
+  7: $spacer * 7,
+  8: $spacer * 8,
+  9: $spacer * 9,
+);
+$spacers: map-merge($spacers, $spacers);
+@import "../../bootstrap/scss/bootstrap.scss";

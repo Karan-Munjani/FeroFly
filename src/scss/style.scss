@@ -1,0 +1,156 @@
+@import "./base";
+body {
+  box-sizing: border-box;
+  width: 100vw;
+  position: relative;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.p-italic {
+  font-family: "Lato", sans-serif;
+  font-size: 1.2em;
+  font-weight: 300;
+}
+.title {
+  font-family: "Montserrat", sans-serif;
+}
+#nav-area {
+  .navbar {
+    width: 100%;
+    background: $primary;
+    .nav {
+      .nav-item {
+        padding: 1em;
+        .nav-link {
+          color: $secondary;
+        }
+      }
+    }
+  }
+}
+
+.parallex {
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#home-area {
+  .brand-name,
+  .brand-desc {
+    font-family: "Kalam", cursive;
+  }
+  .brand-name {
+    h1 {
+      font-size: 2.5em;
+    }
+    letter-spacing: 0.1em;
+  }
+  .brand-desc {
+    position: relative;
+
+    h4 {
+      font-size: 1.2em;
+    }
+    ::after,
+    ::before {
+      position: absolute;
+      content: "";
+      width: 90px;
+      height: 2px;
+      top: 14px;
+      bottom: 0px;
+
+      background: black;
+    }
+    ::before {
+      right: 193px;
+      top: 12px;
+    }
+  }
+
+  #date-form {
+    [type="date"] {
+      background: #fff
+        url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)
+        97% 50% no-repeat;
+    }
+    [type="date"]::-webkit-inner-spin-button {
+      display: none;
+    }
+    [type="date"]::-webkit-calendar-picker-indicator {
+      opacity: 0;
+    }
+
+    /* custom styles */
+  }
+}
+
+#room-area {
+  .room-details {
+    background: white;
+    height: auto;
+    width: 50%;
+    padding: 100px 55px;
+    margin: 100px;
+  }
+}
+#room-img,
+#review-img {
+  background-image: url(../assets/room.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+}
+#review-img {
+  background-image: url(../assets/review-bg.jpg);
+  .review-details {
+    background: white;
+    height: auto;
+    width: 50%;
+    padding: 80px;
+    padding-top: 40px;
+    // margin: 100px;
+  }
+}
+
+.gallery-img {
+  height: 100%;
+  width: 100%;
+}
+
+#review-area .active {
+  background: white;
+}
+
+#contact-us-area {
+  background-color: #f5f5f5;
+
+  .form-control {
+    border: none;
+  }
+}
+
+footer {
+  font-family: "Work Sans", sans-serif;
+
+  display: grid;
+  padding: 0;
+  margin: 0;
+  height: 50px !important;
+  width: 100%;
+  background-color: $primary;
+  opacity: 1;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  height: 1.8em;
+  font-weight: 600;
+  margin: 0;
+}
+
+footer a {
+  color: white;
+}
