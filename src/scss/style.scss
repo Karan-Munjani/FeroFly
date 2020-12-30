@@ -17,6 +17,8 @@ body {
 .title {
   font-family: "Montserrat", sans-serif;
 }
+
+
 #nav-area {
   .navbar {
     width: 100%;
@@ -66,7 +68,7 @@ body {
       background: black;
     }
     ::before {
-      right: 193px;
+      left: -90px;
       top: 12px;
     }
   }
@@ -95,6 +97,11 @@ body {
     width: 50%;
     padding: 100px 55px;
     margin: 100px;
+    @media (max-width: 34em) {
+      padding: 50px 30px;
+      margin: 20px;
+      width: 80%;
+    }
   }
 }
 #room-img,
@@ -112,13 +119,28 @@ body {
     width: 50%;
     padding: 80px;
     padding-top: 40px;
+    @media (max-width: 34em) {
+      padding: 50px 30px;
+      margin: 20px;
+      width: 80%;
+    }
     // margin: 100px;
   }
 }
+#gallery {
+  .gallery-img {
+    height: 100%;
+    width: 100%;
+    @media (max-width: 34em) {
+      padding-bottom: 30px;
+    }
+  }
+}
 
-.gallery-img {
-  height: 100%;
-  width: 100%;
+#see-do {
+  @media (max-width: 34em) {
+    padding-top: 55px;
+  }
 }
 
 #review-area .active {

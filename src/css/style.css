@@ -7983,7 +7983,7 @@ body {
     bottom: 0px;
     background: black; }
   #home-area .brand-desc ::before {
-    right: 193px;
+    left: -90px;
     top: 12px; }
 
 #home-area #date-form {
@@ -8001,6 +8001,11 @@ body {
   width: 50%;
   padding: 100px 55px;
   margin: 100px; }
+  @media (max-width: 34em) {
+    #room-area .room-details {
+      padding: 50px 30px;
+      margin: 20px;
+      width: 80%; } }
 
 #room-img,
 #review-img {
@@ -8017,10 +8022,22 @@ body {
     width: 50%;
     padding: 80px;
     padding-top: 40px; }
+    @media (max-width: 34em) {
+      #review-img .review-details {
+        padding: 50px 30px;
+        margin: 20px;
+        width: 80%; } }
 
-.gallery-img {
+#gallery .gallery-img {
   height: 100%;
   width: 100%; }
+  @media (max-width: 34em) {
+    #gallery .gallery-img {
+      padding-bottom: 30px; } }
+
+@media (max-width: 34em) {
+  #see-do {
+    padding-top: 55px; } }
 
 #review-area .active {
   background: white; }
